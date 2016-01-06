@@ -1,9 +1,29 @@
 <p id="notice"><%= notice %></p>
 
+<h2>You are Currently Standing At...</h2>
+
 <p>
+	<!-- Please note that my location 
+	willl be defined in the model as the 
+	combination of address and city -->
   <strong>Address:</strong>
-  <%= @location.address %>
+  <%= @location.my_location %>
 </p>
+
+<h2>The closest Buses Are..</h2>
+<%= if @bus_count == 0 %>
+	<p>
+		Look at giving Uber a call.
+	</p>
+<% end %>
+
+<% @nearby_buses.each do |bus| %>
+	<p>
+		<strong>Route</strong>: <%= bus["ROUTE"] %><br />
+		<strong>Vehicle #</strong>: <%= bus["VEHICLE"] %><br />
+		<strong>Next Stop:</strong>: <%= bus["TIMEPOINT"] %><br />
+	</p>
+<% end %> 
 
 <p>
   <strong>City:</strong>
@@ -20,5 +40,5 @@
   <%= @location.longitude %>
 </p>
 
-<%= link_to 'Edit', edit_location_path(@location) %> |
+<%= link_to 'My Location is...', edit_location_path(@location) %> |
 <%= link_to 'Back', locations_path %>

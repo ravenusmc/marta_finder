@@ -1,3 +1,7 @@
 == README
 
 Yes, this is my second marta app. I want to again get more practice with Rails and with API's. Also, getting my recent blog up, I want to get a total of five sites up. Five because that is the number that Heroku will allow me to have before I have to pay. Since this site will actually be up, I want it available so that I and maybe others will be able to use it to find the closet bus or Marta station to them in Atlanta! 
+
+The following Gems were used in this project: 
+
+geocoder, httparty
