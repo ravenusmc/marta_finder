@@ -84,5 +84,5 @@
   <%= @location.longitude %>
 </p>
 
-<%= link_to 'My Location is...', edit_location_path(@location) %> |
-<%= link_to 'Back', locations_path %>
+<%= link_to 'My Location is...', edit_location_path(@location), class: "btn btn-primary" %> 
+<%= link_to 'Back', locations_path, class: "btn btn-info" %>
