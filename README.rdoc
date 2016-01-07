@@ -4,6 +4,6 @@ Yes, this is my second marta app. I want to again get more practice with Rails a
 
 The following Gems were used in this project: 
 
-geocoder, httparty, Bootstrap, figaro gem
+geocoder, httparty, Bootstrap, Figaro
 
 What does the HTTparty gem actually do? (I had actually forgotten so the below is for me review!)

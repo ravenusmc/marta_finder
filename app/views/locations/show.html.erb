@@ -24,6 +24,20 @@
 		<strong>Next Stop:</strong>: <%= bus["TIMEPOINT"] %><br />
 	</p>
 <% end %> 
+<script> 
+	function initialize() {
+		var myLatlng = new google.maps.LatLng(<%= @location.latitude %>, <%= @location.longitude %>);
+		var busLatlng = new google.maps.Latlng(<%= bus["LATITUDE"] %>, <%= bus["LONGITUDE"] %>);
+
+		var mapOptions = {
+			center: myLatlng, 
+			zoom: 13
+		};
+
+		var map = new google.maps.Map(document.getElementById('map-canvas<%= index %>'), mapOptions);
+
+		var contentString = "<img src='http://www.motorbussociety.org/conventn/01spr/MARTA%203163.jpg' style='width:50px;height:50px;'/>";
+	}
 
 <p>
   <strong>City:</strong>
