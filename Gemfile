@@ -44,6 +44,10 @@ group :development, :test do
 end
 
 gem 'geocoder'
+
 gem 'httparty'
+
 gem 'bootstrap-sass', '~> 3.3.6'
+
+gem 'figaro'
 
