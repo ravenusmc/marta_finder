@@ -13,7 +13,7 @@
 <h2>The closest Buses Are..</h2>
 <% if @bus_count == 0 %>
 	<p>
-		Look at giving Uber a call.
+		No buses nearby...Look at giving Uber a call.
 	</p>
 <% else %>
 	<% @nearby_buses.each_with_index do |bus, index| %>
