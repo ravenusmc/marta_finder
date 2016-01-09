@@ -1,12 +1,16 @@
-<h1>Is a Bus Nearby?</h1>
+<div class="container new_top">
+  <h1>Is a Bus Nearby?</h1>
+</div>
 
-<p>
-	Please give us your address or 
-	approximate location (<em>I'm at the 
-	corner of...</em>), and we'll let you 
-	know if there's a bus in the vicinty!
-</p> 
+<div class="container new_main">
+  <p>
+  	Please give us your address or 
+  	approximate location (<em>I'm at the 
+  	corner of...</em>), and we'll let you 
+  	know if there's a bus in the vicinty!
+  </p> 
 
-<%= render 'form' %>
+  <%= render 'form' %>
 
-<%= link_to 'Back', locations_path %>
+  <%= link_to 'Back', locations_path, class: "btn btn-primary" %>
+</div>
