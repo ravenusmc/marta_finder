@@ -1,7 +1,5 @@
 <div class="container show">
 
-<p id="notice"><%= notice %></p>
-
 	<h2>You are Currently Standing At...</h2>
 
 <p>
@@ -69,12 +67,7 @@
 </script> 
 	<div id="map-canvas<%= index %>" class="bus-map"></div>
 	<% end %> 
-<% end %>
-
-<p>
-  <strong>City:</strong>
-  <%= @location.city %>
-</p>
+<% end %><br />
 
 <%= link_to 'My Location is...', edit_location_path(@location), class: "btn btn-primary" %> 
 
