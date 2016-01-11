@@ -11,15 +11,15 @@
     </div>
   <% end %>
 
-  <div class="field">
-    Address or Approximate Location:<br>
-    <%= f.text_field :address, placeholder: "Address" %>
+  <div class="form-group">
+    <%= f.label :Address %><br>
+    <%= f.text_field :address, placeholder: "Address or Approximate Location", class: "form-control" %>
   </div>
-  <div class="field">
+  <div class="form-group">
     <%= f.label :city %><br>
-    <%= f.text_field :city, placeholder: "City" %>
+    <%= f.text_field :city, placeholder: "City", class: "form-control" %>
   </div>
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit "Check for Buses!" %>
   </div>
 <% end %>
