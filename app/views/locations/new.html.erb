@@ -1,4 +1,4 @@
-<div class="jumbotron test">
+<div class="jumbotron new_page">
   <section class="banner" > 
     <div class="inner">
       <h3 class="h3_jumbo">Looking for a Bus?</h3>
@@ -9,24 +9,14 @@
 
 <div class="container">
   <h1 class="new_top">How this works</h1>
-    <ol>
-      <li>Type in your current address below!</li>
+    <ol class="new_text">
+      <li>Type in your current/approximate address below!</li>
       <li>Place Atlanta in for the city</li>
       <li>That is it!</li>
     </ol>
-</div>
-
-<div class="container new_main">
-  <p>
-  	Please give us your address or 
-  	approximate location (<em>I'm at the 
-  	corner of...</em>), and we'll let you 
-  	know if there's a bus in the vicinty!
-  </p> 
-
-  <%= render 'form' %>
-
-  <%= link_to 'Back', locations_path, class: "btn btn-primary" %>
+  <div class="new_main">
+    <%= render 'form' %>
+  </div>
 </div>
 
 <div id="footer">
