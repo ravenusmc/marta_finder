@@ -15,3 +15,5 @@ What does the HTTparty gem actually do? (I had actually forgotten so the below i
 -It makes HTTP really really fun! (Or so the first website that I found said!)
 
 -From Treehouse I found that it seems to 'get' information from a URL which will help you build your site much easier. From my experience, using it at TTS and dor this project, it does seem that it is very easy to use. I know that as my skills and understanding increase it will make more sense to me. 
+
+Site is currently up and located at: https://marta-find.herokuapp.com/
